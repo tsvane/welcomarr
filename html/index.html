@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcomarr</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="page-title">
+      <h1>welcomarr</h1>
+      <p>Your media hub</p>
+    </header>
+
+    <section class="nav-buttons">
+      <a class="nav-btn" id="jellyfin-btn" target="_blank" rel="noopener">
+        <div class="nav-btn-logo purple">
+          <img src="assets/jellyfin.svg" alt="" width="52" height="52">
+        </div>
+        <div>
+          <div class="nav-btn-label">Jellyfin</div>
+          <div class="nav-btn-sub">Media server</div>
+        </div>
+      </a>
+      <a class="nav-btn blue" id="seerr-btn" target="_blank" rel="noopener">
+        <div class="nav-btn-logo blue">
+          <img src="assets/overseerr.svg" alt="" width="52" height="52">
+        </div>
+        <div>
+          <div class="nav-btn-label">Seerr</div>
+          <div class="nav-btn-sub">Request media</div>
+        </div>
+      </a>
+    </section>
+
+    <section class="recent-section">
+      <div class="recent-label">Recently Available</div>
+      <div class="poster-row" id="poster-row"></div>
+    </section>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
