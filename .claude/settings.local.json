@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(superpowers:brainstorming)",
+      "Skill(superpowers:writing-plans)",
+      "Skill(superpowers:subagent-driven-development)",
+      "Bash(git init *)",
+      "PowerShell(New-Item *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git ls-tree *)",
+      "WebFetch(domain:github.com)",
+      "Bash(Test-Path C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\\\\html\\\\assets *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\" -Recurse)",
+      "Bash(Select-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\\\\html\" | Where-Object { $_.Name -match \"\\(config|app\\)\" } | ForEach-Object { $_.Name })"
+    ]
+  }
+}
