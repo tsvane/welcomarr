@@ -1,0 +1,4 @@
+window.CONFIG = {
+  jellyfinUrl: "${JELLYFIN_URL}",
+  overseerrUrl: "${OVERSEERR_URL}"
+};
