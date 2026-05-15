@@ -13,7 +13,8 @@
       "Bash(Test-Path C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\\\\html\\\\assets *)",
       "Bash(Get-ChildItem -Path \"C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\" -Recurse)",
       "Bash(Select-Object FullName)",
-      "PowerShell(Get-ChildItem -Path \"C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\\\\html\" | Where-Object { $_.Name -match \"\\(config|app\\)\" } | ForEach-Object { $_.Name })"
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Syncting\\\\Programming\\\\HTML\\\\welcomarr\\\\html\" | Where-Object { $_.Name -match \"\\(config|app\\)\" } | ForEach-Object { $_.Name })",
+      "Skill(superpowers:finishing-a-development-branch)"
     ]
   }
 }
