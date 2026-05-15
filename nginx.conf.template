@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    root /usr/share/nginx/html;
+    index index.html;
+
+    location /api/jellyfin/ {
+        proxy_pass ${JELLYFIN_URL}/;
+        proxy_set_header X-MediaBrowser-Token ${JELLYFIN_API_KEY};
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /api/overseerr/ {
+        proxy_pass ${OVERSEERR_URL}/;
+        proxy_set_header X-Api-Key ${OVERSEERR_API_KEY};
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
